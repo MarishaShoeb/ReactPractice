@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link, NavLink } from 'react-router-dom'
+import { FaReact } from 'react-icons/fa'
 
 const Navbar = () => {
     return (
@@ -12,7 +13,6 @@ const Navbar = () => {
                 referrerpolicy="no-referrer"
             />
             <link rel="stylesheet" href="css/styles.css" />
-            <link rel="icon" type="image/png" href="/favicon.ico" />
             <title>React Jobs | Become a React Developer</title>
             <nav className="bg-indigo-700 border-b border-indigo-500">
                 <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
@@ -22,11 +22,8 @@ const Navbar = () => {
                         >
                             {/* <!-- Logo --> */}
                             <Link className="flex flex-shrink-0 items-center mr-4" to="/index">
-                                <img
-                                    className="h-10 w-auto"
-                                    src="images/logo.png"
-                                    alt="React Jobs"
-                                />
+                                <FaReact size={28} color='white' />
+
                                 <span className="hidden md:block text-white text-2xl font-bold ml-2"
                                 >React Jobs
                                 </span                                >
